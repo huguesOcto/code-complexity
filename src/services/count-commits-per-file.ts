@@ -63,7 +63,7 @@ function buildCommand(directory, { firstParent, since }): string {
       `--format=''`,
       since ? `--since="${since}"` : "",
       firstParent ? "--first-parent" : "",
-      "'*.[tj]s'"
+      "'*.java'"
     ].join(" "),
     "sort",
     // --count might not be supported by all OS
